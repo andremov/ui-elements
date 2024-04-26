@@ -1,0 +1,33 @@
+{
+  "extends": ["custom", "plugin:react-hooks/recommended"],
+  "ignorePatterns": ["jest.config.js"],
+  "plugins": ["@typescript-eslint", "react-hooks"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "typescript": {},
+      "node": {
+        "extensions": [".ts", ".tsx"],
+        "moduleDirectory": ["src", "node_modules"]
+      }
+    }
+  },
+  "rules": {
+    "prettier/prettier": 2,
+    "@typescript-eslint/no-unused-vars": 2,
+    "@typescript-eslint/no-explicit-any": 2,
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "block-like", "next": "*" },
+      { "blankLine": "always", "prev": "*", "next": "block-like" },
+      { "blankLine": "always", "prev": "*", "next": ["export", "return"] },
+      {
+        "blankLine": "always",
+        "prev": ["const", "let"],
+        "next": ["block-like", "expression", "multiline-expression"]
+      }
+    ]
+  }
+}
