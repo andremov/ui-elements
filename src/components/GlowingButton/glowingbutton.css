@@ -1,0 +1,53 @@
+.fgb {
+  border: var(--borderWidth) solid transparent;
+  position: relative;
+  color: var(--textColor);
+  font-size: 2rem;
+  border-radius: var(--borderRadius);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+  background: linear-gradient(var(--backgroundColor), var(--backgroundColor)),
+    linear-gradient(var(--backgroundColor) 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),
+    var(--colorGradient);
+
+  background-origin: border-box;
+  background-clip: padding-box, border-box, border-box;
+  background-size: 200%;
+  animation-name: animate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: var(--animationDuration);
+}
+
+.fgb::before {
+  content: '';
+  background: var(--colorGradient);
+  height: var(--glowSpread);
+  width: 90%;
+  position: absolute;
+  bottom: -20%;
+  z-index: -5;
+  background-size: 200%;
+  animation-name: animate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: var(--animationDuration);
+  filter: blur(var(--glowBlur));
+}
+
+.fgb:hover,
+.fgb:hover::before {
+  animation-duration: var(--hoverDuration);
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
