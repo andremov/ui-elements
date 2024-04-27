@@ -14,35 +14,35 @@ interface CardProps {
     | 'bg-green-300'
     | 'bg-teal-300';
   /**
-   * Background for the card
+   * Name of question category
    */
   categoryName?: string;
   /**
-   * Background for the card
+   * Title for the card
    */
   cardTitle?: string;
   /**
-   * Background for the card
+   * Title for the question
    */
   questionTitle?: string;
   /**
-   * Background for the card
+   * Body for the question
    */
   questionBody?: string;
   /**
-   * Background for the card
+   * Number of times the question has been answered right (greater than or equal to 0)
    */
   right?: number;
   /**
-   * Background for the card
+   * Number of times the question has been answered wrong (greater than or equal to 0)
    */
   wrong?: number;
   /**
-   * Background for the card
+   * Index for the correct answer (between 0 and 3, inclusive)
    */
   correctAnswer?: number;
   /**
-   * Background for the card
+   * Names for the options
    */
   optionNames?: string[];
 }

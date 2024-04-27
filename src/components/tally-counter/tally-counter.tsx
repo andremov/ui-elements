@@ -2,12 +2,12 @@ import TallyIcon from '../tally-icon';
 
 interface TallyCounterProps {
   /**
-   * Size of tallies
+   * Size of tallies (in px)
    */
   size?: number;
 
   /**
-   * Number to count to
+   * Number to count to (greater than or equal to 0)
    */
   count?: number;
 

@@ -18,31 +18,31 @@ interface GlowingButtonProps {
    */
   onClick?: () => void;
   /**
-   * Animation colors
+   * Animation colors (hex codes)
    */
   colors?: string[];
   /**
-   * Background color of the button
+   * Background color of the button (hex code)
    */
   backgroundColor?: string;
   /**
-   * Text color of the button
+   * Text color of the button (hex code)
    */
   textColor?: string;
   /**
-   * Spread of the glow
+   * Spread of the glow (in percent of button's height)
    */
   glowSpread?: number;
   /**
-   * Blurriness of the glow
+   * Blurriness of the glow (in px)
    */
   glowBlur?: number;
   /**
-   * Radius of the button corners
+   * Radius of the button corners (in rem)
    */
   borderRadius?: number;
   /**
-   * Width of the rainbow border
+   * Width of the rainbow border (in rem)
    */
   borderWidth?: number;
 }

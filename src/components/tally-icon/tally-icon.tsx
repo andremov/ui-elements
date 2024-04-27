@@ -6,7 +6,7 @@ interface TallyIconProps {
    */
   count?: number;
   /**
-   * Size of the icon
+   * Size of the icon (in px)
    */
   size?: number;
   /**
