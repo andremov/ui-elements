@@ -10,7 +10,11 @@
   cursor: pointer;
 
   background: linear-gradient(var(--backgroundColor), var(--backgroundColor)),
-    linear-gradient(var(--backgroundColor) 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),
+    linear-gradient(
+      var(--backgroundColor) 50%,
+      rgb(from #f06d06 r g b / 60%) 80%,
+      rgb(from #f06d06 r g b / 0%)
+    ),
     var(--colorGradient);
 
   background-origin: border-box;
@@ -29,7 +33,7 @@
   width: 90%;
   position: absolute;
   bottom: -20%;
-  z-index: -5;
+  z-index: 0;
   background-size: 200%;
   animation-name: animate;
   animation-timing-function: linear;

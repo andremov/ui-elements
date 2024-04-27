@@ -1,6 +1,6 @@
-import './glowingbutton.css';
+import './glowing-button.css';
 
-interface ButtonProps {
+interface GlowingButtonProps {
   /**
    * Button label
    */
@@ -64,15 +64,10 @@ export const GlowingButton = ({
   borderRadius = 2,
   borderWidth = 0.3,
   hoverDuration = 0.5,
-}: ButtonProps) => {
+}: GlowingButtonProps) => {
   if (!Array.isArray(colors) || colors.length === 0) {
     colors = defaultColors;
   }
-
-  console.log({
-    colors,
-    colorGradient: `linear-gradient(90deg,${colors.reduce((acc, c) => `${acc},${c}`)})`,
-  });
 
   return (
     <button

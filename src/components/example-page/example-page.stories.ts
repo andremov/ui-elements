@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { within, userEvent, expect } from '@storybook/test';
 
-import { Page } from './Page';
+import { Page } from './example-page';
 
 const meta = {
   title: 'Example/Page',
@@ -10,6 +10,7 @@ const meta = {
     // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout
     layout: 'fullscreen',
   },
+  tags: ['autodocs'],
 } satisfies Meta<typeof Page>;
 
 export default meta;
