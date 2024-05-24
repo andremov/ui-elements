@@ -10,6 +10,10 @@ interface TallyCounterProps {
    */
   count?: number;
   /**
+   * Max number to count to (greater than or equal to 0)
+   */
+  maxCount?: number;
+  /**
    * Whether to display the count LTR or RTL
    */
   reverse?: boolean;
@@ -24,12 +28,13 @@ export function TallyCounter({
   reverse = false,
   size = 50,
   tallyColor = 'text-black',
+  maxCount = 10,
 }: TallyCounterProps) {
   const fullTallies = Math.floor(count / 5);
   const remTallies = count - fullTallies * 5;
 
   if (count === 0) return <span className={tallyColor}>0</span>;
-  if (count > 10) return <span className={tallyColor}>{count}</span>;
+  if (count > maxCount) return <span className={tallyColor}>{count}</span>;
 
   return (
     <span className={`flex gap-0.5 ${reverse ? 'flex-row-reverse' : ''}`}>
