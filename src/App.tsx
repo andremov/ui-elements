@@ -1,11 +1,5 @@
-
 function App() {
-
-  return (
-    <div className='px-3 text-3xl'>
-      Hey.
-    </div>
-  )
+  return <div className="px-3 text-3xl">Wrong command.</div>;
 }
 
-export default App
+export default App;
