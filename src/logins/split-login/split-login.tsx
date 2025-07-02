@@ -1,7 +1,10 @@
 import { Loader2 } from 'lucide-react';
 import { useState, ChangeEvent, FormEvent } from 'react';
-import { RequestStatus, RequestStatusBadge } from '../request-status-badge/request-status-badge';
-import { PrimaryButton } from '../primary-button';
+import {
+  RequestStatus,
+  RequestStatusBadge,
+} from '../../badges/request-status-badge/request-status-badge';
+import { PrimaryButton } from '../../buttons/primary-button';
 
 interface SplitLoginProps {}
 

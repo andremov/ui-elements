@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-interface TallyCounterProps {
+interface HackerTitleProps {
   /**
    * Text to display
    */
@@ -15,11 +15,11 @@ interface TallyCounterProps {
   letterIteration?: number;
 }
 
-export function HackerText({
+export function HackerTitle({
   text = 'Component',
   letterIteration = 3,
   animationSpeed = 30,
-}: TallyCounterProps) {
+}: HackerTitleProps) {
   const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   const [displayText, setDisplayText] = useState('');
   const [intervalVar, setIntervalVar] = useState<NodeJS.Timeout | undefined>(undefined);
