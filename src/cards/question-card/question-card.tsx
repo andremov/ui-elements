@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Check, Dot, X } from 'lucide-react';
-import TallyCounter from '../tally-counter';
+import TallyCounter from '../../utils/tally-counter';
 
 interface CardProps {
   /**
