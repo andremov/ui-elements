@@ -1,20 +1,5 @@
 import { HomeIcon } from 'lucide-react';
-import { MouseEvent, useEffect, useState } from 'react';
-
-interface DarkHoverCardProps {
-  /**
-   * Number to count (from 1 to 5)
-   */
-  count?: number;
-  /**
-   * Size of the icon (in px)
-   */
-  size?: number;
-  /**
-   * Color of the tally icons
-   */
-  tallyColor?: 'text-white' | 'text-black';
-}
+import { MouseEvent, useState } from 'react';
 
 export function DarkHoverCard() {
   const [mouseX, setMouseX] = useState(-0);
