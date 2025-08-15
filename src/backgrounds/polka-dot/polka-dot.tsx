@@ -47,6 +47,7 @@ export function PolkaDotBackground({
     }
     resizeCanvas();
     // No need to listen for resize in demo mode
+    // window.addEventListener('resize', resizeCanvas);
 
     class Dot {
       currentX: number;
